@@ -1,0 +1,105 @@
+:root {
+  --padding-minimum: 1rem;
+  
+  --gap-minimum: 1rem;
+  --gap-max: 5rem;
+
+  --roboto: "Roboto", sans-serif;
+
+  --text-link-color: #000000;
+  --text-color-white: #ffffff;
+  --social-link-color: #C95E20;
+  --button-color: #FCA60F;
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*Reset*/
+
+@media (max-width: 800px) {
+  .intro img {
+    display: none;
+  }
+
+  .container nav ul li a {
+    display: none;
+  }
+
+  .intro .info p {
+    font-size: 50vw;
+  }
+}
+
+#page {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*Header*/
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--padding-minimum);
+}
+/*Header*/
+
+/*header navbar*/
+.container nav ul {
+  display: flex;
+  gap: var(--gap-max);
+}
+
+.container nav ul li a {
+  font-family: var(--roboto);
+  color: var(--text-link-color);
+}
+/*header navbar*/
+
+.intro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 80vh;
+}
+
+.intro .info p {
+  width: 33vw;
+  font-family: var(--roboto);
+  font-size: 2.5vw;
+  margin-bottom: 50px;
+}
+
+.intro .info a#button {
+  color: var(--text-link-color);
+  background-color: var(--button-color);
+  border-radius: 0.3rem;
+  padding: 1vw 3vw;
+  font-family: var(--roboto);
+  color: var(--text-color-white);
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro ul#social {
+  display: flex;
+  margin-top: 25px;
+  gap: var(--gap-minimum);
+}
