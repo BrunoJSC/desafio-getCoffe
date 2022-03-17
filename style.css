@@ -1,6 +1,6 @@
 :root {
   --padding-minimum: 1rem;
-  
+
   --gap-minimum: 1rem;
   --gap-max: 5rem;
 
@@ -8,8 +8,8 @@
 
   --text-link-color: #000000;
   --text-color-white: #ffffff;
-  --social-link-color: #C95E20;
-  --button-color: #FCA60F;
+  --social-link-color: #c95e20;
+  --button-color: #fca60f;
 }
 /*Reset*/
 * {
@@ -28,16 +28,20 @@ a {
 /*Reset*/
 
 @media (max-width: 800px) {
-  .intro img {
+  .container {
+    flex-direction: column;
+  }
+
+  .container a .logo {
+    margin-bottom: 30px;
+  }
+
+  .intro img.cup-coffee {
     display: none;
   }
 
-  .container nav ul li a {
-    display: none;
-  }
-
-  .intro .info p {
-    font-size: 50vw;
+  .intro .info ul#social {
+    margin-top: 6rem;
   }
 }
 
@@ -91,11 +95,6 @@ a {
   padding: 1vw 3vw;
   font-family: var(--roboto);
   color: var(--text-color-white);
-}
-
-.intro img {
-  max-width: 100%;
-  height: auto;
 }
 
 .intro ul#social {
